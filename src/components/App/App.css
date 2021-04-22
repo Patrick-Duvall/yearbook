@@ -30,3 +30,12 @@ h2 {
   padding: 5px;
   color: rgb(50, 156, 205);
 }
+
+form {
+  background-color: rgba(255, 255, 255, 0.95);
+  margin: auto;
+}
+
+input {
+  margin: 10px;
+}
