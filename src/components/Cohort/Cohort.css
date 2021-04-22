@@ -1,4 +1,4 @@
-.staff-container {
+.grid-container {
   display: grid;
   padding: 20px;
   grid-template-columns: repeat(4, 1fr);
