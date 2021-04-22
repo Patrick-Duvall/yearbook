@@ -2,25 +2,22 @@ import React from 'react';
 import Person from '../Person/Person';
 import './Cohort.css';
 
-// COHORT COMPONENT CODE GOES HERE
-
-
-const Cohort = ({staff}) => {
-  const renderedStaff = staff.map( member => {
+const Cohort = ({people, label}) => {
+  const renderedPeople = people.map( member => {
     return <Person
       id={member.id}
+      key={member.id}
       name={member.name}
       quote={member.quote}
       superlative={member.superlative}
       photo={member.photo}
+      label={label}
     />
   })
 
-  console.log(renderedStaff);
-
   return (
-    <div className='staff-container'>
-      {renderedStaff}
+    <div className={`${label} grid-container`}>
+      {renderedPeople}
     </div>
   )
 }
